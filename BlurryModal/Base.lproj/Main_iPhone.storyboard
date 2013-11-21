@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Dingle-->
+        <!--View Controller - Blurry Modal-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -17,16 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="CVH-01-ACD">
-                                <rect key="frame" x="31" y="95" width="255" height="431"/>
+                                <rect key="frame" x="33" y="230" width="255" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Labelas dfasdf asdf asdf asjdflksjdfl;kasjdf;laksjdf;aslkdjfsadklfjd fskdjfslkdjf sdhflakgh aekf hwfkuhawe fkuawhef uwhf wuefhuwafh eawuf wauefhaiwuhf aiuwefawiefuh wifeuhwofu wof wf 
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-
-
-
-
-
-sdjflasdjf sdf asdf asdf</string>
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,14 +46,18 @@ sdjflasdjf sdf asdf asdf</string>
                                     <segue destination="fNc-wg-8eJ" kind="custom" customClass="BlurryModalSegue" id="gfC-Xy-P4C"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OrangeBIG.png" translatesAutoresizingMaskIntoConstraints="NO" id="xwu-4Y-83m">
+                                <rect key="frame" x="40" y="79" width="240" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Dingle" id="XMq-m9-IiL"/>
+                    <navigationItem key="navigationItem" title="Blurry Modal" id="XMq-m9-IiL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="154"/>
+            <point key="canvasLocation" x="821" y="173"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aqV-av-KX4">
@@ -73,9 +72,9 @@ sdjflasdjf sdf asdf asdf</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWJ-r2-Fs4">
-                                <rect key="frame" x="137" y="377" width="46" height="30"/>
+                                <rect key="frame" x="137" y="269" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Dismiss">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -110,6 +109,9 @@ sdjflasdjf sdf asdf asdf</string>
             <point key="canvasLocation" x="520" y="822"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="OrangeBIG.png" width="1043" height="1152"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
