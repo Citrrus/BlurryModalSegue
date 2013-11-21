@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class BlurryModalSegue;
+
+typedef UIImage*(^ProcessBackgroundImage)(BlurryModalSegue* blurryModalSegue, UIImage* rawImage);
+
 @interface BlurryModalSegue : UIStoryboardSegue
+
+@property (nonatomic, copy) ProcessBackgroundImage processBackgroundImage;
 
 @end
