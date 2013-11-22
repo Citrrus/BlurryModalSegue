@@ -31,7 +31,7 @@
     }
     else
     {
-        snapshot = [snapshot applyBlurWithRadius:20 tintColor:nil saturationDeltaFactor:.35 maskImage:nil];
+        snapshot = [snapshot applyBlurWithRadius:20 tintColor:nil saturationDeltaFactor:.45 maskImage:nil];
     }
     
     destination.view.clipsToBounds = YES;

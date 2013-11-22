@@ -1,4 +1,4 @@
-# BlurryModalTransition
+# BlurryModalSegue
 
-# Example
+## Demo
 ![](blurry_modal.gif)
