@@ -59,8 +59,8 @@
 		B8FB493F183E9A12007BD69A /* BlurryModalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlurryModalTests-Info.plist"; sourceTree = "<group>"; };
 		B8FB4941183E9A12007BD69A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8FB4943183E9A12007BD69A /* BlurryModalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurryModalTests.m; sourceTree = "<group>"; };
-		B8FB494D183E9B90007BD69A /* BlurryModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurryModalSegue.h; sourceTree = "<group>"; };
-		B8FB494E183E9B90007BD69A /* BlurryModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurryModalSegue.m; sourceTree = "<group>"; };
+		B8FB494D183E9B90007BD69A /* BlurryModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurryModalSegue.h; path = ../BlurryModalSegue/BlurryModalSegue.h; sourceTree = "<group>"; };
+		B8FB494E183E9B90007BD69A /* BlurryModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurryModalSegue.m; path = ../BlurryModalSegue/BlurryModalSegue.m; sourceTree = "<group>"; };
 		B8FB4950183EC84B007BD69A /* OrangeBIG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangeBIG.png; sourceTree = "<group>"; };
 		CA9A895FAF82428FB87E831C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
