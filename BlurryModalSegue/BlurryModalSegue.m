@@ -12,6 +12,19 @@
 
 @implementation BlurryModalSegue
 
+- (id)initWithIdentifier:(NSString *)identifier source:(UIViewController *)source destination:(UIViewController *)destination
+{
+    self = [super initWithIdentifier:identifier source:source destination:destination];
+    
+    if (self)
+    {
+        self.backingImageBlurRadius = @(20);
+        self.backingImageSaturationDeltaFactor = @(.45f);
+    }
+    
+    return self;
+}
+
 - (void)perform
 {
     UIViewController* source = (UIViewController*)self.sourceViewController;
@@ -31,7 +44,10 @@
     }
     else
     {
-        snapshot = [snapshot applyBlurWithRadius:20 tintColor:nil saturationDeltaFactor:.45 maskImage:nil];
+        snapshot = [snapshot applyBlurWithRadius:self.backingImageBlurRadius.doubleValue
+                                       tintColor:self.backingImageTintColor
+                           saturationDeltaFactor:self.backingImageSaturationDeltaFactor.doubleValue
+                                       maskImage:nil];
     }
     
     destination.view.clipsToBounds = YES;
