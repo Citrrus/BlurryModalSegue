@@ -103,7 +103,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkN-xP-Ik2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hmA-f6-gsC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="154"/>
+            <point key="canvasLocation" x="1338" y="173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JHf-2z-qtw">
@@ -121,7 +121,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jk1-Sa-3Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="822"/>
+            <point key="canvasLocation" x="312" y="173"/>
         </scene>
     </scenes>
     <resources>
