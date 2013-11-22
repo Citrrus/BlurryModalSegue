@@ -27,9 +27,9 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-YZ-ojK">
-                                <rect key="frame" x="31" y="518" width="43" height="30"/>
+                                <rect key="frame" x="31" y="518" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Modal">
+                                <state key="normal" title="Normal Modal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
