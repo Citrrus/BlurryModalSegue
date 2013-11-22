@@ -16,4 +16,8 @@ typedef UIImage*(^ProcessBackgroundImage)(BlurryModalSegue* blurryModalSegue, UI
 
 @property (nonatomic, copy) ProcessBackgroundImage processBackgroundImage;
 
+@property (nonatomic) NSNumber* backingImageBlurRadius;
+@property (nonatomic) NSNumber* backingImageSaturationDeltaFactor;
+@property (nonatomic) UIColor* backingImageTintColor;
+
 @end
