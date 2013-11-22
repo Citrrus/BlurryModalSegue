@@ -91,7 +91,7 @@
 		B8FB4909183E9A11007BD69A = {
 			isa = PBXGroup;
 			children = (
-				B8FB491B183E9A11007BD69A /* BlurryModal */,
+				B8FB491B183E9A11007BD69A /* BlurryModalDemo */,
 				B8FB493D183E9A12007BD69A /* BlurryModalTests */,
 				B8FB4914183E9A11007BD69A /* Frameworks */,
 				B8FB4913183E9A11007BD69A /* Products */,
@@ -120,7 +120,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B8FB491B183E9A11007BD69A /* BlurryModal */ = {
+		B8FB491B183E9A11007BD69A /* BlurryModalDemo */ = {
 			isa = PBXGroup;
 			children = (
 				B8FB4924183E9A11007BD69A /* AppDelegate.h */,
@@ -133,7 +133,7 @@
 				B8FB494D183E9B90007BD69A /* BlurryModalSegue.h */,
 				B8FB494E183E9B90007BD69A /* BlurryModalSegue.m */,
 			);
-			path = BlurryModal;
+			path = BlurryModalDemo;
 			sourceTree = "<group>";
 		};
 		B8FB491C183E9A11007BD69A /* Supporting Files */ = {
@@ -433,8 +433,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlurryModal/BlurryModalDemo-Prefix.pch";
-				INFOPLIST_FILE = "BlurryModal/BlurryModalDemo-Info.plist";
+				GCC_PREFIX_HEADER = "BlurryModalDemo/BlurryModalDemo-Prefix.pch";
+				INFOPLIST_FILE = "BlurryModalDemo/BlurryModalDemo-Info.plist";
 				PRODUCT_NAME = BlurryModalDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -448,8 +448,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlurryModal/BlurryModalDemo-Prefix.pch";
-				INFOPLIST_FILE = "BlurryModal/BlurryModalDemo-Info.plist";
+				GCC_PREFIX_HEADER = "BlurryModalDemo/BlurryModalDemo-Prefix.pch";
+				INFOPLIST_FILE = "BlurryModalDemo/BlurryModalDemo-Info.plist";
 				PRODUCT_NAME = BlurryModalDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -460,14 +460,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlurryModal.app/BlurryModal";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlurryModalDemo.app/BlurryModalDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlurryModal/BlurryModal-Prefix.pch";
+				GCC_PREFIX_HEADER = "BlurryModalDemo/BlurryModalDemo-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -483,14 +483,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlurryModal.app/BlurryModal";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlurryModalDemo.app/BlurryModalDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlurryModal/BlurryModal-Prefix.pch";
+				GCC_PREFIX_HEADER = "BlurryModalDemo/BlurryModalDemo-Prefix.pch";
 				INFOPLIST_FILE = "BlurryModalTests/BlurryModalDemoTests-Info.plist";
 				PRODUCT_NAME = BlurryModalDemoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
