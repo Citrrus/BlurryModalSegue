@@ -25,9 +25,21 @@ To this:
 
 Done!
 
-### Customized Usage
+### Custom Styling
 
-To customize the blur before presentation, implement ```prepareForSegue:sender:```:
+BlurryModalSegue conforms to the UIAppearance protocol.  Configure it once across the app:
+
+```objc
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[BlurryModalSegue appearance] setBackingImageBlurRadius:@(20)];
+    [[BlurryModalSegue appearance] setBackingImageSaturationDeltaFactor:@(.45)];
+    
+    return YES;
+}
+```
+
+Additionally, you can customize individual instances before presentation, just implement ```prepareForSegue:sender:```:
 ```objc
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
