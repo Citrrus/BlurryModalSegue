@@ -9,8 +9,14 @@
 #import "BlurryModalSegue.h"
 #import <QuartzCore/QuartzCore.h>
 #import <UIImage+BlurredFrame/UIImage+ImageEffects.h>
+#import <MZAppearance/MZAppearance.h>
 
 @implementation BlurryModalSegue
+
++ (id)appearance
+{
+    return [MZAppearance appearanceForClass:[self class]];
+}
 
 - (id)initWithIdentifier:(NSString *)identifier source:(UIViewController *)source destination:(UIViewController *)destination
 {
@@ -18,8 +24,11 @@
     
     if (self)
     {
+        // Some sane defaults
         self.backingImageBlurRadius = @(20);
         self.backingImageSaturationDeltaFactor = @(.45f);
+        
+        [[[self class] appearance] applyInvocationTo:self];
     }
     
     return self;
