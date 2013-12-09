@@ -62,7 +62,20 @@
     destination.view.clipsToBounds = YES;
     
     UIImageView* backgroundImageView = [[UIImageView alloc] initWithImage:snapshot];
-    backgroundImageView.frame = CGRectMake(0, -windowSize.height, windowSize.width, windowSize.height);
+
+    CGRect frame;
+    switch (destination.modalTransitionStyle) {
+        case UIModalTransitionStyleCoverVertical:
+            // Only the CoverVertical transition make sense to have an
+            // animation on the background to make it look still while
+            // destination view controllers animates from the bottom to top
+            frame = CGRectMake(0, -windowSize.height, windowSize.width, windowSize.height);
+            break;
+        default:
+            frame = CGRectMake(0, 0, windowSize.width, windowSize.height);
+            break;
+    }
+    backgroundImageView.frame = frame;
     
     [destination.view addSubview:backgroundImageView];
     [destination.view sendSubviewToBack:backgroundImageView];
