@@ -59,6 +59,7 @@ Additionally, you can customize individual instances before presentation, just i
 * iOS7+ only, as we take advantage of the new ```UIViewControllerTransitionCoordinator```.
 * Only ```UIModalTransitionStyleCoverVertical``` is supported right now.
 * Eagle-eyed developers will notice that the effect is better during presentation than dismissal.  This is because ```UIViewController -(id<UIViewControllerTransitionCoordinator>)transitionCoordinator``` only seems to support the presentation, not the dismissal.  I believe the dismissal could be implented using the ```UIViewController -(id<UIViewControllerTransitioningDelegate>)transitioningDelegate```, but that is TBD.
+* Rotation is not supported.
 
 ## Acknowledgements
-* The blur effect in this library is courtesy of [UIImage-BlurredFrame](https://github.com/Adrian2112/UIImage-BlurredFrame) library.
+* The blur effect in this library is courtesy of the [UIImage-BlurredFrame](https://github.com/Adrian2112/UIImage-BlurredFrame) library.
