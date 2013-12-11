@@ -57,7 +57,7 @@ Additionally, you can customize individual instances before presentation, just i
 
 ## Compatibility/Restrictions
 * iOS7+ only, as we take advantage of the new ```UIViewControllerTransitionCoordinator```.
-* Only ```UIModalTransitionStyleCoverVertical``` is supported right now.
+* ```UIModalTransitionStylePartialCurl``` is not supported and doesn't really make sense for this library.
 * Eagle-eyed developers will notice that the effect is better during presentation than dismissal.  This is because ```UIViewController -(id<UIViewControllerTransitionCoordinator>)transitionCoordinator``` only seems to support the presentation, not the dismissal.  I believe the dismissal could be implented using the ```UIViewController -(id<UIViewControllerTransitioningDelegate>)transitioningDelegate```, but that is TBD.
 * Rotation is not supported.
 
