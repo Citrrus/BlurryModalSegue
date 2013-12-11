@@ -1,9 +1,9 @@
 PODS:
-  - BlurryModalSegue (0.2.0):
+  - BlurryModalSegue (0.3.0):
     - MZAppearance (~> 1.1.1)
     - UIImage+BlurredFrame (~> 0.0.2)
   - MZAppearance (1.1.1)
-  - UIImage+BlurredFrame (0.0.2)
+  - UIImage+BlurredFrame (0.0.3)
 
 DEPENDENCIES:
   - BlurryModalSegue (from `.`)
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: .
 
 SPEC CHECKSUMS:
-  BlurryModalSegue: 3d05de937fdf5bda8acb2863e5f149f4a364122b
+  BlurryModalSegue: 3c2fc76c090c95567af1637c899066d794331a87
   MZAppearance: 8b02683f0019f725557ae9839ed6cab153fff669
-  UIImage+BlurredFrame: e35b3b542923b64e0ef1c5cfd2ef7971a9a0b2a3
+  UIImage+BlurredFrame: 07cbc58d6c6ba86d5d0abbd9dfb1c424fa3086bb
 
 COCOAPODS: 0.28.0
