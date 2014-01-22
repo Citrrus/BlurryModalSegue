@@ -16,6 +16,8 @@
     [[BlurryModalSegue appearance] setBackingImageBlurRadius:@(20)];
     [[BlurryModalSegue appearance] setBackingImageSaturationDeltaFactor:@(.45)];
     
+    [[UIToolbar appearance] setBackgroundColor:[UIColor orangeColor]];
+    
     return YES;
 }
 
