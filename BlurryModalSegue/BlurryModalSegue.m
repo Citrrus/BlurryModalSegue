@@ -42,9 +42,9 @@
     CGSize windowSize = source.view.window.bounds.size;
     
     UIGraphicsBeginImageContextWithOptions(windowSize, YES, 2.0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    [source.view.window.layer renderInContext:context];
+    [source.view.window drawViewHierarchyInRect:source.view.window.bounds afterScreenUpdates:NO];
     UIImage *snapshot = UIGraphicsGetImageFromCurrentImageContext();
+    
     UIGraphicsEndImageContext();
 
     if (self.processBackgroundImage)
