@@ -39,10 +39,11 @@
     UIViewController* source = (UIViewController*)self.sourceViewController;
     UIViewController* destination = (UIViewController*)self.destinationViewController;
     
-    CGSize windowSize = source.view.window.bounds.size;
+    CGRect windowBounds = source.view.window.bounds;
+    CGSize windowSize = windowBounds.size;
     
     UIGraphicsBeginImageContextWithOptions(windowSize, YES, 2.0);
-    [source.view.window drawViewHierarchyInRect:source.view.window.bounds afterScreenUpdates:NO];
+    [source.view.window drawViewHierarchyInRect:windowBounds afterScreenUpdates:NO];
     UIImage *snapshot = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
