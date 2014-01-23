@@ -42,7 +42,7 @@
     CGRect windowBounds = source.view.window.bounds;
     CGSize windowSize = windowBounds.size;
     
-    UIGraphicsBeginImageContextWithOptions(windowSize, YES, 2.0);
+    UIGraphicsBeginImageContextWithOptions(windowSize, YES, 0.0);
     [source.view.window drawViewHierarchyInRect:windowBounds afterScreenUpdates:NO];
     UIImage *snapshot = UIGraphicsGetImageFromCurrentImageContext();
     
