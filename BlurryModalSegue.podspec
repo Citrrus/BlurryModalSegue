@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  git_tag         = '0.4.0'
+  git_tag         = '1.0.0'
 
   s.name          = "BlurryModalSegue"
   s.version       = git_tag
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source_files  = 'BlurryModalSegue'
   s.framework     = 'QuartzCore'
   s.requires_arc  = true
-  s.dependency 'UIImage+BlurredFrame', '~> 0.0.2'
+  s.dependency 'UIImage+BlurredFrame', '~> 0.0.4'
   s.dependency 'MZAppearance', '~>1.1.1'
 
 end
