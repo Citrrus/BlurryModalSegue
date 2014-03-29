@@ -25,6 +25,7 @@ To this:
 
 Done!
 
+_If nested view controllers are being presented (e.g., UINavigationController -> UIViewController), make sure to set the background color of any nested views to [UIColor clearColor] so the blurry UIImageView is visible_
 ### Custom Styling
 
 BlurryModalSegue conforms to the UIAppearance protocol.  Configure it once across the app:
@@ -54,6 +55,9 @@ Additionally, you can customize individual instances before presentation, just i
 }
 
 ```
+
+### Troubleshooting
+If you just see a solid color instead of a blurry background after performing a segue, ensure that the view controllers being presented don't have a background color set on their views.  This is common when presenting a UINavigationController that is in turn presenting a root view controller.  The UIImageView that contains the blurry image is added as a subview to the `-[UIStorybardSegue destinationViewController]`'s `view` property.  In the case of a presented UINavigationController, it immediately presents a child view controller.  If that view controller has a solid background color, it could completely hide the blurry UIImageView.
 
 ## Compatibility/Restrictions
 * iOS7+ only, as we take advantage of the new ```UIViewControllerTransitionCoordinator```.
