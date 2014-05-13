@@ -55,6 +55,13 @@ static UIImageOrientation ImageOrientationFromInterfaceOrientation(UIInterfaceOr
 {
     UIViewController* source = (UIViewController*)self.sourceViewController;
     UIViewController* destination = (UIViewController*)self.destinationViewController;
+    UIModalTransitionStyle transitionStyle = destination.modalTransitionStyle;
+    
+    if ([destination isKindOfClass:[UINavigationController class]])
+    {
+        UINavigationController *navigationController = (UINavigationController *)destination;
+        destination = navigationController.viewControllers.firstObject;
+    }
 
     CGRect windowBounds = source.view.window.bounds;
     
@@ -87,7 +94,7 @@ static UIImageOrientation ImageOrientationFromInterfaceOrientation(UIInterfaceOr
     UIImageView* backgroundImageView = [[UIImageView alloc] initWithImage:snapshot];
 
     CGRect frame;
-    switch (destination.modalTransitionStyle) {
+    switch (transitionStyle) {
         case UIModalTransitionStyleCoverVertical:
             // Only the CoverVertical transition make sense to have an
             // animation on the background to make it look still while
