@@ -63,7 +63,7 @@ If you just see a solid color instead of a blurry background after performing a 
 * iOS7+ only, as we take advantage of the new ```UIViewControllerTransitionCoordinator```.
 * ```UIModalTransitionStylePartialCurl``` is not supported and doesn't really make sense for this library.
 * For ```UIModalTransitionStyleCoverVertical```, eagle-eyed developers will notice that the effect is better during presentation than dismissal.  This is because ```[UIViewController -transitionCoordinator]``` only seems to support the presentation, not the dismissal.  I believe the dismissal could be implented using the ```[UIViewController -transitioningDelegate]```, but that is TBD.
-* Rotation is not supported.
+* Rotation after modal presentation is unsupported as the backing image will only be appropriate for the original orientation.
 
 ## Acknowledgements
 * The blur effect in this library is courtesy of the [UIImage-BlurredFrame](https://github.com/Adrian2112/UIImage-BlurredFrame) library.
