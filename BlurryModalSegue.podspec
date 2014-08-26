@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                    BlurryModalSegue is a UIStoryboardSegue subclass that provides a blur effect for Modal storyboard segues.
                    DESC
   s.homepage      = "https://github.com/Citrrus/BlurryModalSegue"
-  s.screenshots   = "https://raw.github.com/Citrrus/BlurryModalSegue/#{git_tag}/blurry_modal.gif"
+  s.screenshots   = "https://raw.githubusercontent.com/Citrrus/BlurryModalSegue/#{git_tag}/assets/blurry_modal.gif"
   s.license       = 'MIT'
   s.author        = { "Matt Hupman" => "mhupman@citrrus.com" }
   s.platform      = :ios, '7.0'
