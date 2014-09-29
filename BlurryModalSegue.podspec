@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  git_tag         = '1.1.1'
+  git_tag         = '1.1.2'
 
   s.name          = "BlurryModalSegue"
   s.version       = git_tag
