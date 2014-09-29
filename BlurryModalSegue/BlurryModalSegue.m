@@ -80,7 +80,21 @@ static UIImageOrientation ImageOrientationFromInterfaceOrientation(UIInterfaceOr
                                        maskImage:nil];
     }
     
-    snapshot = [UIImage imageWithCGImage:snapshot.CGImage scale:1.0 orientation:ImageOrientationFromInterfaceOrientation([UIApplication sharedApplication].statusBarOrientation)];
+    
+    UIImageOrientation desiredOrientation;
+    
+    // Starting with iOS8, drawViewHierarchyInRect:afterScreenUpdates: and/or UIGraphicsGetImageFromCurrentImageContext()
+    // will return an image that is already oriented to the device's current orientation.  No need to re-orient in that case.
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending)
+    {
+        desiredOrientation = ImageOrientationFromInterfaceOrientation([UIApplication sharedApplication].statusBarOrientation);
+    }
+    else
+    {
+        desiredOrientation = snapshot.imageOrientation;
+    }
+    
+    snapshot = [UIImage imageWithCGImage:snapshot.CGImage scale:1.0 orientation:desiredOrientation];
     
     destination.view.clipsToBounds = YES;
     
