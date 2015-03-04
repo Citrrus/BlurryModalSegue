@@ -31,6 +31,8 @@ _If nested view controllers are being presented (e.g., UINavigationController ->
 BlurryModalSegue conforms to the UIAppearance protocol.  Configure it once across the app:
 
 ```objc
+#import "BlurryModalSegue.h"
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[BlurryModalSegue appearance] setBackingImageBlurRadius:@(20)];
@@ -42,6 +44,8 @@ BlurryModalSegue conforms to the UIAppearance protocol.  Configure it once acros
 
 Additionally, you can customize individual instances before presentation, just implement ```prepareForSegue:sender:```:
 ```objc
+#import "BlurryModalSegue.h"
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue isKindOfClass:[BlurryModalSegue class]])
