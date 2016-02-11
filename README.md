@@ -6,7 +6,7 @@ BlurryModalSegue is a UIStoryboardSegue subclass that provides a blur effect for
 ![](assets/blurry_modal.gif)
 
 ## Installation
-Via [Cocoapods](http://cocoapods.org):
+Via [CocoaPods](http://cocoapods.org):
 ```ruby
 pod 'BlurryModalSegue'
 ```
