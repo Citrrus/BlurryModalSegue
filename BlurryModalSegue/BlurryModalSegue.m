@@ -55,6 +55,8 @@ static UIImageOrientation ImageOrientationFromInterfaceOrientation(UIInterfaceOr
 {
     UIViewController* source = (UIViewController*)self.sourceViewController;
     UIViewController* destination = (UIViewController*)self.destinationViewController;
+    
+    destination.modalPresentationStyle = [[[UIDevice currentDevice] systemVersion] rangeOfString:@"8.0"].length == 0 ? UIModalPresentationFullScreen : UIModalPresentationCurrentContext;
 
     CGRect windowBounds = source.view.window.bounds;
     
